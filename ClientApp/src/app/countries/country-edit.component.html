@@ -10,7 +10,7 @@
              placeholder="Country name..."
              class="form-control" />
       <div *ngIf="hasError('name')"
-            class="invalid-feedback">
+           class="invalid-feedback">
         <div *ngIf="form.get('name').errors?.required">
           Name is required.
         </div>
@@ -30,7 +30,7 @@
              placeholder="2 letters country code..."
              class="form-control" />
       <div *ngIf="hasError('iso2')"
-            class="invalid-feedback">
+           class="invalid-feedback">
         <div *ngIf="form.get('iso2').errors?.required">
           ISO 3166-1 ALPHA-2 country code is required.
         </div>
@@ -54,7 +54,7 @@
              placeholder="3 letters country code..."
              class="form-control" />
       <div *ngIf="hasError('iso3')"
-            class="invalid-feedback">
+           class="invalid-feedback">
         <div *ngIf="form.get('iso3').errors?.required">
           ISO 3166-1 ALPHA-3 country code is required.
         </div>
@@ -85,6 +85,24 @@
               class="btn btn-default">
         Cancel
       </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Form debug info panel -->
+<div class="card bg-light mb-3">
+  <div class="card-header">Form Debug Info</div>
+  <div class="card-body">
+    <div class="card-text">
+      <div><strong>Form value:</strong></div>
+      <div class="help-block">
+        {{ form.value | json }}
+      </div>
+      <div class="mt-2"><strong>Form status:</strong></div>
+      <div class="help-block">
+        {{ form.status | json }}
+      </div>
     </div>
   </div>
 </div>

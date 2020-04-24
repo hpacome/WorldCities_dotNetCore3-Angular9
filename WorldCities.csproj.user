@@ -12,6 +12,11 @@
     <WebStackScaffolding_DbContextTypeFullName>WorldCities.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Update="ClientApp\src\app\cities\cities.component.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
     <TypeScriptCompile Update="ClientApp\src\app\countries\country.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
